@@ -1,4 +1,5 @@
 import { useState, useCallback, useEffect, useRef } from 'react'
+import {Lock} from 'lucide-react';
 
 function App() {
   const [length, setLength] = useState(8)
@@ -36,6 +37,7 @@ const copytoclip= useCallback(()=>{
   return (
     <>
       <div className='w-full max-w-md mx-auto shadow-md rounded-lg p-5 my-8 bg-gray-800 text-orange-500'>
+        < Lock size={28} color='white'/>
         <h1 className='text-white text-center'>Password Generator</h1>
         <div className='justify-center flex shadow rounded-lg overflow-hidden mb-4'>
           <input className='w-full p-3 outline-none'
